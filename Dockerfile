@@ -1,7 +1,6 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
-ENV TTY_VER 1.6.1
-
+ENV TTY_VER 1.7.7
 RUN apt-get -y update && \
     apt-get install -y curl && \
     curl -sLk https://github.com/tsl0922/ttyd/releases/download/${TTY_VER}/ttyd_linux.x86_64 -o ttyd_linux && \
