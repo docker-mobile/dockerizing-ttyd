@@ -14,6 +14,6 @@ COPY run_ttyd.sh /run_ttyd.sh
 
 RUN chmod 744 /run_ttyd.sh
 
-EXPOSE 80
+EXPOSE 10000
 
 CMD ["/bin/bash","/run_ttyd.sh"]
